@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Welcome to CHAT</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1>Добро пожаловать в чат :)</h1>
+			</header>
+			<main class="join-main">
+				<form class="mainForm" action="chat.html">
+					<div class="form-control">
+						<label for="username">Имя пользователя:</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Введите имя пользователя..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Чат:</label>
+						<select name="room" id="room">
+							<option value="10 ин-тех">10 ин-тех</option>
+							<option value="10 ен">10 ен</option>
+							<option value="10 гум">10 гум</option>
+							<option value="10 соц-гум">10 соц-гум</option>
+							<option value="10 соц-эк">10 соц-эк</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Войти в чат</button>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>
